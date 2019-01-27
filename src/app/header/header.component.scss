@@ -1,0 +1,37 @@
+@import 'styles';
+
+.header {
+  height: map-get($app, header);
+  padding: 0 map-get($spacing, 32);
+  background: map-get($color, blue-1);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+	  display: flex;
+    align-items: center;
+    height: 100%;
+	  padding: 0 16px;
+    font-size: map-get($font-size, 16);
+    text-decoration: none;
+    color: map-get($font-color, white);
+
+    &--active {
+      background: lightblue;
+      height: 100%;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    top: map-get($spacing, 12);
+
+    &-img {
+      width: map-get($font-size, 72);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import 'styles';
+
+:host {
+  display: grid;
+  grid-template-rows:
+    [header-start] map-get($app, header)
+    [header-end content-start] calc(100vh - #{map-get($app, header)})
+    [content-end];
+}
+
+.app {
+
+  &__content {
+    margin: map-get($spacing, 48) auto 0;
+    max-width: map-get($breakpoints, large-desktop);
+    width: 90%;
+  }
+}
