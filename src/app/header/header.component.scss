@@ -2,7 +2,6 @@
 
 .header {
   height: map-get($app, header);
-  padding: 0 map-get($spacing, 32);
   background: map-get($color, blue-1);
 
   &__container {
@@ -29,9 +28,6 @@
   &__logo {
     position: relative;
     top: map-get($spacing, 12);
-
-    &-img {
-      width: map-get($font-size, 72);
-    }
+    width: map-get($font-size, 72);
   }
 }
