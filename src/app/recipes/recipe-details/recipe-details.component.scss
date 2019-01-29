@@ -1,0 +1,29 @@
+@import 'styles';
+
+.recipe-details {
+  margin-top: map-get($spacing, 16);
+
+  &__name {
+    font-size: map-get($font-size, 30);
+    margin-bottom: map-get($spacing, 16);
+    font-weight: map-get($font-weight, bold);
+  }
+
+  &__description {
+    font-style: italic;
+    margin-bottom: map-get($spacing, 32);
+  }
+
+  &__header {
+    font-size: map-get($font-size, 30);
+    margin-bottom: map-get($spacing, 16);
+    color: map-get($font-color, gray);
+  }
+
+  &__instructions {
+
+    &-list-item {
+      margin-bottom: map-get($spacing, 8);
+    }
+  }
+}

@@ -16,10 +16,14 @@ html {
 
 body {
   color: map-get($font-color, dark);
-  // background: map-get($color, darkest);
   font-family: $font-stack;
 	font-weight: map-get($font-weight, normal);
   line-height: map-get($line-height, 1.5);
   min-height: 100vh;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: map-get($font-color, dark);
 }

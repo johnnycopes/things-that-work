@@ -28,9 +28,10 @@ $z-index: (
 );
 
 $border: (
-  radius: 0px
+  radius: 50px
 );
 
 $app: (
-  header: map-get($spacing, 64)
+  header: map-get($spacing, 64),
+  grid-gap: map-get($spacing, 16)
 );

@@ -1,0 +1,27 @@
+<main class="recipe-details">
+  <h1 class="recipe-details__name">
+    {{recipe.name}}
+  </h1>
+  <p class="recipe-details__description"
+    *ngIf="recipe.description"
+    >
+    {{recipe.description}}
+  </p>
+  <h3 class="recipe-details__header">Instructions</h3>
+  <div class="recipe-details__instructions"
+    *ngFor="let process of recipe.instructions"
+    >
+    <h3 class="recipe-details__process-title"
+      *ngIf="process.title"
+      >
+      {{process.title}}
+    </h3>
+    <ul class="recipe-details__instructions-list">
+      <li class="recipe-details__instructions-list-item"
+        *ngFor="let step of process.steps; let i = index"
+        >
+        {{i + 1}}. {{step}}
+      </li>
+    </ul>
+  </div>
+</main>

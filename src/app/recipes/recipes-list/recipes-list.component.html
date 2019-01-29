@@ -1,0 +1,8 @@
+<ul class="recipes-list">
+  <app-recipes-list-item
+    *ngFor="let recipe of recipes; let i = index"
+    [recipe]="recipe"
+    [index]="i"
+    >
+  </app-recipes-list-item>
+</ul>

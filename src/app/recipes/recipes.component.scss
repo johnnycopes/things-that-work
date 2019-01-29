@@ -1,0 +1,7 @@
+@import 'styles';
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: map-get($spacing, 32);
+}

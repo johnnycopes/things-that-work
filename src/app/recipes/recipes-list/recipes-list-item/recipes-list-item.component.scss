@@ -1,0 +1,12 @@
+@import 'styles';
+
+.recipes-list-item {
+  display: block;
+  padding: map-get($spacing, 16);
+
+  &--active {
+    background: lightblue;
+    color: map-get($font-color, white);
+    border-radius: map-get($border, radius);
+  }
+}

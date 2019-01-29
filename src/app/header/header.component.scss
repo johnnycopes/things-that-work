@@ -16,7 +16,6 @@
     height: 100%;
 	  padding: 0 16px;
     font-size: map-get($font-size, 16);
-    text-decoration: none;
     color: map-get($font-color, white);
 
     &--active {
