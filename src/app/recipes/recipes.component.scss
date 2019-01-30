@@ -3,5 +3,5 @@
 :host {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: map-get($spacing, 32);
+  grid-gap: map-get($spacing, 24);
 }

@@ -7,8 +7,22 @@
     >
     {{recipe.description}}
   </p>
-  <h3 class="recipe-details__header">Instructions</h3>
-  <div class="recipe-details__instructions"
+  <h2 class="recipe-details__header">
+    Ingredients
+  </h2>
+  <div class="recipe-details__section">
+    <ul class="recipe-details__list">
+      <li class="recipe-details__list-item"
+        *ngFor="let ingredient of recipe.ingredients"
+        >
+        {{ingredient.quantity}} {{ingredient.unit}} {{ingredient.name}}
+      </li>
+    </ul>
+  </div>
+  <h2 class="recipe-details__header">
+    Instructions
+  </h2>
+  <div class="recipe-details__section"
     *ngFor="let process of recipe.instructions"
     >
     <h3 class="recipe-details__process-title"
@@ -16,8 +30,8 @@
       >
       {{process.title}}
     </h3>
-    <ul class="recipe-details__instructions-list">
-      <li class="recipe-details__instructions-list-item"
+    <ul class="recipe-details__list">
+      <li class="recipe-details__list-item"
         *ngFor="let step of process.steps; let i = index"
         >
         {{i + 1}}. {{step}}

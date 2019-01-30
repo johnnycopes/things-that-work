@@ -1,6 +1,17 @@
 <ul class="recipes-list">
+  <app-button
+    text="Add new recipe"
+    (clicked)="onAddNewRecipe()"
+    >
+  </app-button>
+  <input class="recipes-list__searchbar"
+    type="text"
+    placeholder="Search recipes..."
+    [(ngModel)]="searchTerm"
+    (keyup)="onSearch()"
+    >
   <app-recipes-list-item
-    *ngFor="let recipe of recipes; let i = index"
+    *ngFor="let recipe of filteredRecipes; let i = index"
     [recipe]="recipe"
     [index]="i"
     >

@@ -1,2 +1,31 @@
 @import 'styles';
 
+.recipes-list {
+
+  &__add-new-button {
+    border: none;
+    border-radius: map-get($border, radius);
+    padding: map-get($spacing, 16);
+    font-size: map-get($font-size, 16);
+    text-transform: uppercase;
+    margin-bottom: map-get($spacing, 16);
+    width: 100%;
+    font-family: $font-stack;
+    background: map-get($color, green-1);
+    color: map-get($color, white);
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+  }
+
+  &__searchbar {
+    width: 100%;
+    padding: map-get($spacing, 16);
+    border: none;
+    border-radius: map-get($border, radius);
+    outline: none;
+    font-family: $font-stack;
+    font-size: map-get($font-size, 20);
+    margin-bottom: map-get($spacing, 16);
+  }
+}

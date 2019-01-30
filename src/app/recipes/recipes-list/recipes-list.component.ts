@@ -9,11 +9,26 @@ import { RecipesService } from '../recipes.service';
   styleUrls: ['./recipes-list.component.scss']
 })
 export class RecipesListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  searchTerm: string;
+  filteredRecipes: Recipe[] = [];
+  private recipes: Recipe[] = [];
 
   constructor(private recipesService: RecipesService) { }
 
   ngOnInit() {
     this.recipes = this.recipesService.getRecipes();
+    this.filteredRecipes = this.recipesService.getRecipes();
+  }
+
+  onAddNewRecipe() {
+    // do stuff here
+  }
+
+  onSearch() {
+    this.filteredRecipes = this.recipes.filter(recipe => {
+      return recipe.name
+        .toLowerCase()
+        .indexOf(this.searchTerm) > -1;
+    });
   }
 }

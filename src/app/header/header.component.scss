@@ -2,7 +2,7 @@
 
 .header {
   height: map-get($app, header);
-  background: map-get($color, blue-1);
+  background: map-get($color, blue-2);
 
   &__container {
     height: 100%;
@@ -19,7 +19,7 @@
     color: map-get($font-color, white);
 
     &--active {
-      background: lightblue;
+      background: map-get($color, blue-1);
       height: 100%;
     }
   }

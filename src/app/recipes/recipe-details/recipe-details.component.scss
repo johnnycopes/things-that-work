@@ -1,7 +1,9 @@
 @import 'styles';
 
 .recipe-details {
-  margin-top: map-get($spacing, 16);
+  background: map-get($color, white);
+  border-radius: map-get($border, radius);
+  padding: map-get($spacing, 16);
 
   &__name {
     font-size: map-get($font-size, 30);
@@ -15,15 +17,16 @@
   }
 
   &__header {
-    font-size: map-get($font-size, 30);
+    font-size: map-get($font-size, 24);
     margin-bottom: map-get($spacing, 16);
     color: map-get($font-color, gray);
   }
 
-  &__instructions {
+  &__section {
+    margin-bottom: map-get($spacing, 32);
+  }
 
-    &-list-item {
-      margin-bottom: map-get($spacing, 8);
-    }
+  &__list-item {
+    margin-bottom: map-get($spacing, 8);
   }
 }
