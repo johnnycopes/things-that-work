@@ -37,3 +37,7 @@ $line-height: (
   normal: 1.5,
   large: 2
 );
+
+.bold {
+  font-weight: map-get($font-weight, bold);
+}

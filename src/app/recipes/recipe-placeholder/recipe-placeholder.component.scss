@@ -1,0 +1,18 @@
+@import 'styles';
+
+.recipe-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-size: map-get($font-size, 30);
+    margin-bottom: map-get($spacing, 32);
+  }
+
+  &__logo {
+    width: map-get($spacing, 256);
+    margin-bottom: map-get($spacing, 32);
+  }
+}
