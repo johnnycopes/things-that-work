@@ -1,27 +1,19 @@
-# ThingsThatWork
+# Things That Work
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+## CURRENTLY BEING BUILT!
 
-## Development server
+### Live site: *coming soon*
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is an app designed to simplify your cooking workflow. You can easily manage your favorite recipes, the ingredients in your kitchen, and your current shopping list all in one place.
 
-## Code scaffolding
+#### Goals of this project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Build a well-organized, sophisticated full-stack application using Angular
+- Leverage serverless tools to incorporate user accounts, a database, and the ability to send a text message or email to a user (Firebase and TBD)
+- Reduce my own personal time and energy spent on managing my kitchen by outsourcing recipe and ingredient management to this app
 
-## Build
+#### Local installation:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Clone the project repository
+2. Navigate into the newly-created directory and install all dependencies by running `npm install`
+3. Navigate into this project's folder via your CLI and boot the project with `npm start`. This will run the project locally, opening a new tab pointing to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files

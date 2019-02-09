@@ -28,3 +28,14 @@ a {
   text-decoration: none;
   color: map-get($font-color, dark);
 }
+
+input[type="text"] {
+  width: 100%;
+  padding: map-get($spacing, 16);
+  border: none;
+  border-radius: map-get($border, radius);
+  outline: none;
+  font-family: $font-stack;
+  font-size: map-get($font-size, 20);
+  margin-bottom: map-get($spacing, 16);
+}

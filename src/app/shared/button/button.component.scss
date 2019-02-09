@@ -9,8 +9,8 @@
   margin-bottom: map-get($spacing, 16);
   width: 100%;
   font-family: $font-stack;
-  background: map-get($color, green-1);
-  color: map-get($color, white);
+  background: map-get($color, pink-1);
+  color: map-get($font-color, white);
   cursor: pointer;
   outline: none;
   font-weight: 700;
