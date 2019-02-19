@@ -5,9 +5,14 @@
   border-radius: map-get($border, radius);
   padding: map-get($spacing, 16);
 
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: map-get($spacing, 16);
+  }
+
   &__name {
     font-size: map-get($font-size, 30);
-    margin-bottom: map-get($spacing, 16);
     font-weight: map-get($font-weight, bold);
   }
 
@@ -19,7 +24,7 @@
   &__header {
     font-size: map-get($font-size, 24);
     margin-bottom: map-get($spacing, 16);
-    color: map-get($font-color, gray);
+    color: map-get($font-color, light);
   }
 
   &__section {

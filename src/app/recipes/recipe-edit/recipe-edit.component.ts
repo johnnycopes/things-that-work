@@ -13,6 +13,9 @@ export class RecipeEditComponent implements OnInit {
 
   ngOnInit() {
     this.initForm();
+  }
+
+  onSubmit() {
     console.log(this.recipeForm);
   }
 
@@ -21,6 +24,7 @@ export class RecipeEditComponent implements OnInit {
     let recipeImagePath = '';
     let recipeDescription = '';
     const recipeIngredients = new FormArray([]);
+    const recipeInstructions = new FormArray([]);
 
     // if (this.editMode) {
     //   const recipe = this.recipeService.getRecipe(this.id);
@@ -44,9 +48,9 @@ export class RecipeEditComponent implements OnInit {
 
     this.recipeForm = new FormGroup({
       'name': new FormControl(recipeName, Validators.required),
-      'imagePath': new FormControl(recipeImagePath, Validators.required),
-      'description': new FormControl(recipeDescription, Validators.required),
-      'ingredients': recipeIngredients
+      'description': new FormControl(recipeDescription),
+      'ingredients': recipeIngredients,
+      'instructions': recipeInstructions
     });
   }
 

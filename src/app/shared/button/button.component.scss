@@ -1,17 +1,33 @@
 @import 'styles';
 
+:host {
+  display: block;
+}
+
 .button {
   border: none;
   border-radius: map-get($border, radius);
-  padding: map-get($spacing, 16);
+  padding: map-get($spacing, 16) map-get($spacing, 32);
   font-size: map-get($font-size, 16);
   text-transform: uppercase;
-  margin-bottom: map-get($spacing, 16);
-  width: 100%;
   font-family: $font-stack;
-  background: map-get($color, pink-1);
-  color: map-get($font-color, white);
   cursor: pointer;
   outline: none;
   font-weight: 700;
+  letter-spacing: 1px;
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--primary {
+    background: map-get($color, pink-1);
+    color: map-get($color, white);
+  }
+
+  &--secondary {
+    background: transparent;
+    color: map-get($color, blue-1);
+    padding: 0;
+  }
 }

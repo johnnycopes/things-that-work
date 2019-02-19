@@ -1,4 +1,5 @@
-<button class="button"
+<button class="button button--{{kind}}"
+  [ngClass]="{'button--full-width': fullWidth}"
   [type]="type || 'button'"
   [disabled]="disabled"
   (click)="onClick()"

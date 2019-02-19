@@ -1,14 +1,22 @@
 <main class="recipe-details">
-  <h1 class="recipe-details__name">
-    {{recipe.name}}
-  </h1>
+  <div class="recipe-details__top">
+    <h1 class="recipe-details__name">
+      {{recipe.name}}
+    </h1>
+    <app-button
+      text="Edit"
+      type="button"
+      kind="secondary"
+      >
+    </app-button>
+  </div>
   <p class="recipe-details__description"
     *ngIf="recipe.description"
     >
     {{recipe.description}}
   </p>
   <h2 class="recipe-details__header">
-    Ingredients
+    Ingredients:
   </h2>
   <div class="recipe-details__section">
     <ul class="recipe-details__list">
@@ -20,7 +28,7 @@
     </ul>
   </div>
   <h2 class="recipe-details__header">
-    Instructions
+    Instructions:
   </h2>
   <div class="recipe-details__section"
     *ngFor="let process of recipe.instructions"

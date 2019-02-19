@@ -1,0 +1,39 @@
+@import 'styles';
+
+.recipe-edit {
+
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: map-get($spacing, 16);
+  }
+
+  &__title {
+    margin-right: auto;
+    font-size: map-get($font-size, 30);
+    font-weight: map-get($font-weight, bold);
+  }
+
+  &__cancel,
+  &__save {
+    margin-left: map-get($spacing, 24);
+  }
+
+  &__field {
+    margin-bottom: 16px;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+  }
+
+  &__remove {
+    margin-left: map-get($spacing, 16);
+  }
+
+  &__add {
+    margin-top: map-get($spacing, 16);
+  }
+}
